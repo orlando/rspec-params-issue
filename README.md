@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Link to issue on rpsec](https://github.com/rspec/rspec-rails/issues/1700)
 
-Things you may want to cover:
+To see the bug in action:
 
-* Ruby version
+git clone https://github.com/cvoege/rspec-params-issue
+cd rspec-params-issue
+bundle update ; bundle install
+rspec
 
-* System dependencies
+Haven't tested on windows, should be fine on linux.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Version of ruby I'm using: ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]
