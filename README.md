@@ -4,10 +4,12 @@
 
 To see the bug in action:
 
+```
 git clone https://github.com/cvoege/rspec-params-issue
 cd rspec-params-issue
 bundle update ; bundle install
 rspec
+```
 
 Haven't tested on windows, should be fine on linux.
 
