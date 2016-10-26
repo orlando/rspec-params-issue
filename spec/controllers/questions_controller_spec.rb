@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe QuestionsController, type: :controller do
   describe 'post #create' do
     subject do
-      post :create, format: :json, params: {
+      post :create, as: :json, params: {
         questions: [
           {
             prompt: '1',
@@ -45,11 +45,11 @@ RSpec.describe QuestionsController, type: :controller do
     end
     it 'should set answer on third question' do
       json = JSON.parse(subject.body)
-      expect(json['questions'][3]['details']['answer']).to eq(1)
+      expect(json['questions'][2]['details']['answer']).to eq(1)
     end
     it 'should set choices on third question' do
       json = JSON.parse(subject.body)
-      expect(json['questions'][3]['details']['choices']).to eq(
+      expect(json['questions'][2]['details']['choices']).to eq(
         [
           'Choice 1',
           'Correct Choice',
